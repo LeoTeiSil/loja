@@ -34,7 +34,7 @@ include 'cabecalho.php';
                     <td>
 
                         <div class='btn-group' role='group'>
-                            <a href='#' type='button' class='btn btn-danger'>Atualizar</a>
+                            <a href='form_atualizar.php?id=".$produto['id']."' type='button' class='btn btn-danger'>Atualizar</a>
                             <a href='#' type='button' class='btn btn-warning'>Apagar</a>
                         </div>
 
