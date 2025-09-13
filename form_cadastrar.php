@@ -2,6 +2,10 @@
     include 'cabecalho.php';
 ?>
 
+<head>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
 <body>
     <div class="container">
         <h2>Cadastrar produto</h2>
