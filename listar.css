@@ -2,31 +2,43 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f0f2f5, #dfe6ed);
-    color: #333;
+    background: linear-gradient(135deg, #000000, #0a0a0a);
+    color: #00ff00;
+    min-height: 100vh;
 }
 
 .container {
-    background: #fff;
+    background: #111111;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 30px #00ff00;
     max-width: 1000px;
     margin: 40px auto;
     text-align: center;
+    border: 2px solid #00ff00;
 }
 
 .container h1 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #00ff00;
     margin-bottom: 10px;
+    text-shadow:
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00;
 }
 
 .container h2 {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #555;
+    color: #66ff66;
     margin-bottom: 25px;
+    text-shadow:
+        0 0 3px #66ff66,
+        0 0 7px #66ff66;
 }
 
 .table {
@@ -35,24 +47,29 @@ body {
     margin-bottom: 20px;
     border-radius: 12px;
     overflow: hidden;
+    background-color: #111;
+    box-shadow:
+        0 0 10px #00ff00;
 }
 
 .table thead {
-    background-color: #212529;
-    color: #fff;
+    background-color: #003300;
+    color: #00ff00;
 }
 
 .table thead th {
     padding: 12px;
     text-align: center;
+    text-shadow:
+        0 0 3px #00ff00;
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #002200;
 }
 
 .table tbody tr:hover {
-    background-color: #e9ecef;
+    background-color: #004400;
     transition: background 0.3s ease;
 }
 
@@ -60,6 +77,10 @@ body {
     padding: 10px;
     text-align: center;
     vertical-align: middle;
+    color: #00ff00;
+    text-shadow:
+        0 0 2px #00ff00;
+    border-bottom: 1px solid #003300;
 }
 
 .btn-group a {
@@ -68,11 +89,25 @@ body {
     padding: 6px 14px;
     font-size: 0.9rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(45deg, #00ff00, #009900);
+    color: #000;
+    text-decoration: none;
+    box-shadow:
+        0 0 6px #00ff00,
+        0 0 10px #00ff00;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .btn-group a:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 30px #00ff00;
+    background: linear-gradient(45deg, #00cc00, #004d00);
+    color: #fff;
 }
 
 .container > .btn {
@@ -80,4 +115,22 @@ body {
     border-radius: 10px !important;
     padding: 10px 20px;
     font-size: 1rem;
+    background: linear-gradient(45deg, #00ff00, #009900);
+    color: #000;
+    border: none;
+    box-shadow:
+        0 0 8px #00ff00,
+        0 0 15px #00ff00;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.container > .btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 12px #00ff00,
+        0 0 25px #00ff00,
+        0 0 35px #00ff00;
+    background: linear-gradient(45deg, #00cc00, #004d00);
+    color: #fff;
 }

@@ -28,7 +28,8 @@ include 'cabecalho.php';
         // }
         
         ?>
-        <form action='inserir.php' method="POST">
+        <form action="listar.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $produto['id']; ?>">
             <div class="mb-3">
                 Nome: <input value="<?php echo $produto['nome']; ?>" type="text" class="form-control" name="produto">
             </div>
@@ -36,13 +37,11 @@ include 'cabecalho.php';
                 Preço: <input value="<?php echo $produto['preco']; ?>" type="text" class="form-control" name="preco">
             </div>
             <div class="mb-3">
-                Quantidade: <input value="<?php echo $produto['quantidade']; ?>" type="text" class="form-control"
-                    name="quantidade">
+                Quantidade: <input value="<?php echo $produto['quantidade']; ?>" type="text" class="form-control" name="quantidade">
             </div>
             <button type="submit" class="btn btn-primary">Atualizar</button>
             <a href="index.php" type="button" class="btn btn-warning">Voltar</a>
-    </div>
-    </form>
+        </form>
     </div>
     <?php
     include 'rodape.php';
